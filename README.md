@@ -8,6 +8,6 @@ AQSHasDone
 + (void)markDone:(NSString *)key;
 + (BOOL)checkAndMarkDone:(NSString *)key;
 
-+ (BOOL)perform:(SEL)selector ifHasNotDoneForKey:(NSString *)key;
-+ (BOOL)performBlock:(void(^)())block ifHasNotDoneForKey:(NSString *)key;
++ (BOOL)performAndMarkDone:(SEL)selector ifHasNotDoneForKey:(NSString *)key;
++ (BOOL)performBlockAndMarkDone:(void(^)())block ifHasNotDoneForKey:(NSString *)key;
 ```
